@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2023 at 03:56 PM
+-- Generation Time: Apr 30, 2023 at 11:39 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -45,7 +45,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `number`, `name`, `avatar`, `username`, `password`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'DEVELOPMENT', 'no-avatar.jpg', 'admin', 'admin', NULL, '2023-04-30 11:33:54', '2023-02-19 07:36:32', '2023-04-30 11:33:54');
+(1, 1, 'DEVELOPMENT', 'no-avatar.jpg', 'admin', 'admin', NULL, '2023-04-30 21:37:49', '2023-02-19 07:36:32', '2023-04-30 21:37:49');
 
 -- --------------------------------------------------------
 
@@ -213,9 +213,9 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`id`, `category_id`, `slug`, `title`, `created_at`, `updated_at`) VALUES
-(1, 1, 'barangay', 'Barangay', '2023-04-30 08:33:54', '2023-04-30 13:56:07'),
-(2, 1, 'school', 'School', '2023-04-30 08:33:20', '2023-04-30 13:56:04'),
-(3, 1, 'social', 'Social', '2023-04-30 08:34:01', '2023-04-30 11:34:40'),
+(1, 1, 'barangays', 'Competing Barangays', '2023-04-30 08:33:54', '2023-04-30 21:38:49'),
+(2, 1, 'schools', 'Competing Schools', '2023-04-30 08:33:20', '2023-04-30 21:38:53'),
+(3, 1, 'socials', 'Competing Socials', '2023-04-30 08:34:01', '2023-04-30 21:38:59'),
 (4, 2, 'best-muse', 'Best Muse', '2023-04-30 11:44:26', '2023-04-30 11:44:26');
 
 -- --------------------------------------------------------
