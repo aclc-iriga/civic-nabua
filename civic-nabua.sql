@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2023 at 11:39 PM
+-- Generation Time: May 01, 2023 at 09:51 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -45,7 +45,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `number`, `name`, `avatar`, `username`, `password`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'DEVELOPMENT', 'no-avatar.jpg', 'admin', 'admin', NULL, '2023-04-30 21:37:49', '2023-02-19 07:36:32', '2023-04-30 21:37:49');
+(1, 1, 'DEVELOPMENT', 'no-avatar.jpg', 'aadmin', 'aadmin143', NULL, '2023-05-01 07:46:18', '2023-02-19 07:36:32', '2023-05-01 07:46:18');
 
 -- --------------------------------------------------------
 
@@ -191,7 +191,11 @@ INSERT INTO `eliminations` (`id`, `event_id`, `team_id`, `created_at`, `updated_
 (13, 3, 4, '2023-04-30 11:59:39', '2023-04-30 11:59:39'),
 (14, 3, 5, '2023-04-30 11:59:40', '2023-04-30 11:59:40'),
 (15, 3, 6, '2023-04-30 11:59:40', '2023-04-30 11:59:40'),
-(16, 3, 7, '2023-04-30 11:59:41', '2023-04-30 11:59:41');
+(16, 3, 7, '2023-04-30 11:59:41', '2023-04-30 11:59:41'),
+(17, 1, 9, '2023-05-01 01:02:14', '2023-05-01 01:02:14'),
+(18, 2, 9, '2023-05-01 01:02:16', '2023-05-01 01:02:16'),
+(19, 3, 9, '2023-05-01 01:02:18', '2023-05-01 01:02:18'),
+(20, 4, 7, '2023-05-01 01:06:12', '2023-05-01 01:06:12');
 
 -- --------------------------------------------------------
 
@@ -242,9 +246,9 @@ CREATE TABLE `judges` (
 --
 
 INSERT INTO `judges` (`id`, `number`, `name`, `avatar`, `username`, `password`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Judge 01', 'no-avatar.jpg', 'judge01', 'judge01', NULL, NULL, '2023-04-06 13:58:11', '2023-04-30 07:22:58'),
-(2, 2, 'Judge 02', 'no-avatar.jpg', 'judge02', 'judge02', NULL, NULL, '2023-04-06 13:58:28', '2023-04-06 13:58:28'),
-(3, 3, 'Judge 03', 'no-avatar.jpg', 'judge03', 'judge03', NULL, NULL, '2023-04-06 13:58:42', '2023-04-06 13:58:42');
+(1, 1, 'Judge 01', 'no-avatar.jpg', 'judge01', 'judge01', NULL, NULL, '2023-04-06 13:58:11', '2023-05-01 07:47:47'),
+(2, 2, 'Judge 02', 'no-avatar.jpg', 'judge02', 'judge02', NULL, NULL, '2023-04-06 13:58:28', '2023-05-01 07:47:50'),
+(3, 3, 'Judge 03', 'no-avatar.jpg', 'judge03', 'judge03', NULL, NULL, '2023-04-06 13:58:42', '2023-05-01 07:47:53');
 
 -- --------------------------------------------------------
 
@@ -328,6 +332,44 @@ CREATE TABLE `points` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `points`
+--
+
+INSERT INTO `points` (`id`, `event_id`, `rank`, `value`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(2, 1, 2, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(3, 1, 3, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(4, 1, 4, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(5, 1, 5, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(6, 1, 6, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(7, 1, 7, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(8, 1, 8, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(9, 2, 1, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(10, 2, 2, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(11, 2, 3, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(12, 2, 4, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(13, 2, 5, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(14, 2, 6, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(15, 2, 7, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(16, 2, 8, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(17, 3, 1, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(18, 3, 2, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(19, 3, 3, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(20, 3, 4, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(21, 3, 5, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(22, 3, 6, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(23, 3, 7, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(24, 3, 8, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(25, 4, 1, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(26, 4, 2, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(27, 4, 3, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(28, 4, 4, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(29, 4, 5, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(30, 4, 6, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(31, 4, 7, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10'),
+(32, 4, 8, 0, '2023-05-01 01:01:10', '2023-05-01 01:01:10');
+
 -- --------------------------------------------------------
 
 --
@@ -373,7 +415,8 @@ INSERT INTO `teams` (`id`, `number`, `name`, `location`, `avatar`, `created_at`,
 (5, 2, 'PALOYON PROPER', 'BARANGAY', 'paloyon-proper.jpg', '2023-04-30 08:08:44', '2023-04-30 08:26:20'),
 (6, 3, 'SAN MIGUEL', 'BARANGAY', 'san-miguel.jpg', '2023-04-30 08:08:44', '2023-04-30 08:26:27'),
 (7, 4, 'TOPAS SOGOD', 'BARANGAY', 'topas-sogod.jpg', '2023-04-30 08:08:44', '2023-04-30 08:26:31'),
-(8, 1, 'TANDAAY HIGH SCHOOL (SENIOR SCOUT AND GIRLS SCOUT)', 'SOCIAL', 'tandaay-high-school.jpg', '2023-04-30 08:08:44', '2023-04-30 08:26:36');
+(8, 1, 'TANDAAY HIGH SCHOOL (SENIOR SCOUT AND GIRLS SCOUT)', 'SOCIAL', 'tandaay-high-school.jpg', '2023-04-30 08:08:44', '2023-04-30 08:26:36'),
+(9, 1, 'SAN ANTONIO OGBON', 'z_MUSE', 'contingent.jpg', '2023-05-01 01:02:05', '2023-05-01 01:02:54');
 
 -- --------------------------------------------------------
 
@@ -625,7 +668,7 @@ ALTER TABLE `deductions`
 -- AUTO_INCREMENT for table `eliminations`
 --
 ALTER TABLE `eliminations`
-  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `events`
@@ -661,7 +704,7 @@ ALTER TABLE `participants`
 -- AUTO_INCREMENT for table `points`
 --
 ALTER TABLE `points`
-  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `ratings`
@@ -673,7 +716,7 @@ ALTER TABLE `ratings`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `technicals`
