@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2023 at 09:51 AM
+-- Generation Time: May 28, 2023 at 06:59 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -34,6 +34,7 @@ CREATE TABLE `admins` (
   `avatar` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `active_portion` varchar(255) DEFAULT NULL,
   `called_at` timestamp NULL DEFAULT NULL,
   `pinged_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -44,8 +45,8 @@ CREATE TABLE `admins` (
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`id`, `number`, `name`, `avatar`, `username`, `password`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'DEVELOPMENT', 'no-avatar.jpg', 'aadmin', 'aadmin143', NULL, '2023-05-01 07:46:18', '2023-02-19 07:36:32', '2023-05-01 07:46:18');
+INSERT INTO `admins` (`id`, `number`, `name`, `avatar`, `username`, `password`, `active_portion`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
+(1, 1, 'DEVELOPMENT', 'no-avatar.jpg', 'aadmin', 'aadmin143', NULL, NULL, NULL, '2023-02-19 07:36:32', '2023-05-28 04:57:37');
 
 -- --------------------------------------------------------
 
@@ -235,6 +236,7 @@ CREATE TABLE `judges` (
   `avatar` varchar(255) DEFAULT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `active_portion` varchar(255) DEFAULT NULL,
   `called_at` timestamp NULL DEFAULT NULL,
   `pinged_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -245,10 +247,10 @@ CREATE TABLE `judges` (
 -- Dumping data for table `judges`
 --
 
-INSERT INTO `judges` (`id`, `number`, `name`, `avatar`, `username`, `password`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Judge 01', 'no-avatar.jpg', 'judge01', 'judge01', NULL, NULL, '2023-04-06 13:58:11', '2023-05-01 07:47:47'),
-(2, 2, 'Judge 02', 'no-avatar.jpg', 'judge02', 'judge02', NULL, NULL, '2023-04-06 13:58:28', '2023-05-01 07:47:50'),
-(3, 3, 'Judge 03', 'no-avatar.jpg', 'judge03', 'judge03', NULL, NULL, '2023-04-06 13:58:42', '2023-05-01 07:47:53');
+INSERT INTO `judges` (`id`, `number`, `name`, `avatar`, `username`, `password`, `active_portion`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Judge 01', 'no-avatar.jpg', 'judge01', 'judge01', NULL, NULL, NULL, '2023-04-06 13:58:11', '2023-05-01 07:47:47'),
+(2, 2, 'Judge 02', 'no-avatar.jpg', 'judge02', 'judge02', NULL, NULL, NULL, '2023-04-06 13:58:28', '2023-05-01 07:47:50'),
+(3, 3, 'Judge 03', 'no-avatar.jpg', 'judge03', 'judge03', NULL, NULL, NULL, '2023-04-06 13:58:42', '2023-05-01 07:47:53');
 
 -- --------------------------------------------------------
 
@@ -431,6 +433,7 @@ CREATE TABLE `technicals` (
   `avatar` varchar(255) DEFAULT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `active_portion` varchar(255) DEFAULT NULL,
   `called_at` timestamp NULL DEFAULT NULL,
   `pinged_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -441,8 +444,8 @@ CREATE TABLE `technicals` (
 -- Dumping data for table `technicals`
 --
 
-INSERT INTO `technicals` (`id`, `number`, `name`, `avatar`, `username`, `password`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Technical 01', 'no-avatar.jpg', 'technical01', 'technical01', NULL, NULL, '2023-02-19 08:58:58', '2023-04-06 14:00:12');
+INSERT INTO `technicals` (`id`, `number`, `name`, `avatar`, `username`, `password`, `active_portion`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Technical 01', 'no-avatar.jpg', 'technical01', 'technical01', NULL, NULL, NULL, '2023-02-19 08:58:58', '2023-04-06 14:00:12');
 
 -- --------------------------------------------------------
 
