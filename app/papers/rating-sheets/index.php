@@ -31,14 +31,14 @@
             border-left: 2px solid #aaa !important;
         }
     </style>
-    <title>Scoresheet</title>
+    <title>Rating Sheets</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1 class="text-uppercase"><?= Competition::findById(1)->getTitle() ?></h1>
-                <h3>S C O R E S H E E T</h3>
+                <h3>R A T I N G&nbsp;&nbsp;&nbsp;&nbsp;S H E E T</h3>
             </div>
             <div class="col-md-6 text-center">
                 <h1>_____________________</h1>
@@ -71,12 +71,12 @@
                                     <?php } ?>
 
                                     <!-- total header -->
-                                    <th class="table-primary br" style="width: 11%">
+                                    <th class="table-success br" style="width: 11%">
                                         <h4 class="text-center text-uppercase m-0">TOTAL</h4>
                                     </th>
 
                                     <!-- rank header -->
-                                    <th class="table-success br" style="width: 11%">
+                                    <th class="table-primary br" style="width: 11%">
                                         <h4 class="text-center text-uppercase m-0">RANK</h4>
                                     </th>
                                 </tr>
@@ -89,10 +89,10 @@
                                     <?php } ?>
 
                                     <!-- total spacer -->
-                                    <th class="table-primary bb br"></th>
+                                    <th class="table-success bb br"></th>
 
                                     <!-- rank notes -->
-                                    <th class="table-success text-center bb br"><small>1 = <i>highest</i></small></th>
+                                    <th class="table-primary text-center bb br"><small>1 = <i>highest</i></small></th>
                                 </tr>
                             </thead>
 
@@ -128,10 +128,10 @@
                                     <?php } ?>
 
                                     <!-- total box -->
-                                    <td class="table-primary bb br"></td>
+                                    <td class="table-success bb br"></td>
 
                                     <!-- rank box -->
-                                    <td class="table-success bb br"></td>
+                                    <td class="table-primary bb br"></td>
                                 </tr>
                             <?php } ?>
                             </tbody>
