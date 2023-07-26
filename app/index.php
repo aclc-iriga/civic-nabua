@@ -63,6 +63,7 @@ $routes = [
     [ "name" => "CRUD"            , "route" => "crud/competitions.php" ],
     [ "name" => "User Assignments", "route" => "crud/assignment"       ],
     [ "name" => "Eliminations"    , "route" => "crud/eliminations"     ],
+    [ "name" => "Arrangements"    , "route" => "crud/orders"           ],
     [ "name" => "Rating Sheets"   , "route" => "papers/rating-sheets"  ]
 ];
 ?>
