@@ -27,6 +27,7 @@ app/crud/uploads/*
 !app/crud/uploads/san-miguel.jpg
 !app/crud/uploads/topas-sogod.jpg
 !app/crud/uploads/contingent.jpg
+!app/crud/uploads/tandaay.jpg
 !app/crud/uploads/no-avatar.jpg
 !app/crud/dist
 /cypress/videos/
