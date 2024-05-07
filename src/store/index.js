@@ -12,7 +12,7 @@ export default createStore({
 
     state: {
         app: {
-            title: 'Annual Civic Street Parade 2023',
+            title: 'Annual Civic Street Parade 2024',
             org: 'ACLC College Iriga',
             backendDir: 'app',
             sideNav: false
