@@ -1,6 +1,6 @@
 # civic-nabua
 
-Tabulation System for Annual Civic Street Parade (Nabua, Camarines Sur)
+Tabulation System for Alinsangan Grand Parade (Nabua, Camarines Sur)
 
 ---
 ## Development Setup

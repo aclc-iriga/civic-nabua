@@ -36,7 +36,7 @@
 </head>
 <body>
     <div class="container py-5">
-        <h2 class="fw-bolder">Annual Civic Street Parade (Nabua, Camarines Sur)</h2>
+        <h2 class="fw-bolder">Alinsangan Grand Parade (Nabua, Camarines Sur)</h2>
     </div>
     <div>
         <table>
